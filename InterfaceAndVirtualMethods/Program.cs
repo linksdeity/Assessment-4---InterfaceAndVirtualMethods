@@ -23,7 +23,7 @@ namespace InterfaceAndVirtualMethods
 
             Console.WriteLine("We have a square!\nHow large are the sides?");
 
-            int sides = Validator.GetNumber("Please enter a number 1 - 10000000", 1, 10000000);
+            int sides = Validator.GetNumber("Please enter a number 1 - 10000000)", 1, 10000000);
 
             Square userSquare = new Square(sides);
 
@@ -47,19 +47,6 @@ namespace InterfaceAndVirtualMethods
 
                     Console.WriteLine("The area of this square is: {0}", userSquare.GetArea());
 
-                    Console.WriteLine("Would you like to get the area of a differently sized square?");
-
-                    answer = Validator.GetAnyCaseChar("Please type 'y' for 'y'es, anything else for no!", 'y', 'Y');
-
-                    if (answer)
-                    {
-                        continue;
-                    }
-                    else
-                    {
-                        break;
-                    }
-
                 }
                 else
                 {
@@ -70,7 +57,6 @@ namespace InterfaceAndVirtualMethods
 
             Console.WriteLine("Goodbye!!!");
             Console.ReadKey();
-
 
         }
     }

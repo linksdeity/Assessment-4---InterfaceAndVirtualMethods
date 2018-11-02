@@ -23,7 +23,7 @@ namespace InterfaceAndVirtualMethods
 
         public void SetSide()
         {
-            Side = Validator.GetNumber("Please enter the side length (1 - 10000000", 1, 10000000); 
+            Side = Validator.GetNumber("Please enter the side length (1 - 10000000)", 1, 10000000); 
         }
 
         public int GetSide()
